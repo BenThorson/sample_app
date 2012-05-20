@@ -10,6 +10,7 @@ group :development, :test do
 	gem 'pg'
 	gem 'rspec-rails', '2.9.0'
 	gem 'guard-rspec', '0.5.5'
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 # Gems used only for assets and not required
