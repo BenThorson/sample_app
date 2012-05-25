@@ -49,7 +49,7 @@ describe User do
                      foo@bar_baz.com foo@bar+baz.com]
       addresses.each do |invalid_address|
         @user.email = invalid_address
-        @user.should_not be_valid
+        @user.should_not be_valid  
       end      
     end
   end
@@ -93,7 +93,7 @@ describe User do
     before { @user.password_confirmation = "mismatch" }
     it { should_not be_valid }
   end
-
+ 
   describe "when password confirmation is nil" do
     before { @user.password_confirmation = nil }
     it { should_not be_valid }
