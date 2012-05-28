@@ -18,7 +18,7 @@ describe User do
                      password: "foobar", password_confirmation: "foobar")
 	end
 
-	subject {@user}
+	subject {@user}  
 
 	it {should respond_to(:name)}
 	it {should respond_to(:email)}
@@ -49,7 +49,7 @@ describe User do
                      foo@bar_baz.com foo@bar+baz.com]
       addresses.each do |invalid_address|
         @user.email = invalid_address
-        @user.should_not be_valid  
+        @user.should_not be_valid   
       end      
     end
   end
